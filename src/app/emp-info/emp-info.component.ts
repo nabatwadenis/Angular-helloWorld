@@ -21,9 +21,14 @@ export class EmpInfoComponent {
   getinfofromclass3(){
     this.infoRecieved1 = this.rservice.getInfo3();
   }
+  updateInfo(frm:any){
+    this.rservice.addInfo(frm.value.location)
+
+  }
   constructor (private rservice: RecordsService){
 
   }
+
 
 
 }

@@ -1,3 +1,10 @@
+<form #frm="ngForm" (ngSubmit)="updateInfo(frm)">
+    <div class="">
+        <input type="text" name="location" value="" ngModel>
+        <button type="submit" name="button" class="btn">Add Info</button>
+    </div>
+</form>
+
 <button type="button" name="button" (click)="getinfofromclass1()">Employee1</button>
 <ul class="list-group">
     <li *ngFor="let info of infoRecieved1" class="list-group-item">{{info}}</li>

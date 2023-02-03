@@ -17,6 +17,13 @@ export class RecordsService {
   getInfo3(): string[]{
     return this.info3;
   }
+  addInfo(info: string){
+    this.info1.push(info)
+    this.info2.push(info)
+    this.info3.push(info)
+    return this.info1
+
+  }
 
   constructor() { }
 }
