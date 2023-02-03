@@ -6,8 +6,8 @@
             <input #name="ngModel" required minlength="2" maxlength="7" type="text" name="firstName" class="form-control" ngModel>
             <!--generate an if statement to catch the exception-->
             <div *ngIf="name.touched && name.invalid" class="alert alert-danger">
-                <p *ngIf="name.errors.required">FirstName required</p>
-                <p *ngIf="name.errors.minlength">Length too short</p>
+                <p *ngIf="name.errors">FirstName required</p><!--add mrequired to if block-->
+                <p *ngIf="name.errors">Length too short</p><!---add minlength to if block-->
             </div>
         </div>
         <pre></pre>
